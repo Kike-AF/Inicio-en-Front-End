@@ -10,8 +10,16 @@
 /* aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien */
 /* Globales*/
 html {
-    font-size: 62.5;
+    font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: mandatory;
+}
+/*Scroll Nap*/
+.servicios,
+.navegacion-principal,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 *,
@@ -23,7 +31,8 @@ html {
 body {
     font-size: 16px;
     /* Irem = 10px */
-    font-family: "Krub", sans-serif;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
 
 .contenedor {
@@ -35,6 +44,7 @@ body {
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
+    padding-top: 1.5rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -42,6 +52,7 @@ body {
     border-radius: .5rem;
     text-align: center;
     border: none;
+    width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -88,7 +99,19 @@ h3 {
     text-align: center;
     margin: 0;
 }
-
+/*Utilidades*/
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+        margin-top: 4rem;
+    }
+}
+.flex {
+    display: flex;
+}
 /* Navegación principal*/
 .nav-bg {
     background-color: var(--secundario);
@@ -234,7 +257,7 @@ h3 {
 }
 
 .campo textarea{
-    height: 10rem;
+    height: 20rem;
 }
 
 .input-text{
@@ -243,10 +266,15 @@ h3 {
     padding: 1.5rem;
     border-radius: .5rem;
 }
-.enviar{
+.alinear-derecha{
+    margin-top: 2rem;
+    justify-content: flex-end;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: .5rem;
     text-align: right;
     border: none;
+}
+.footer{
+    text-align: center;
 }

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 5rem 5rem;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    letter-spacing: 8px;
+}
+
+/* Sección HTML y CSS con fondo gris translúcido */
+.box {
+    background-color: rgba(128, 128, 128, 0.3); /* Gris con transparencia */
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.box h2 {
+    background-color: #ddd;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.icono {
+    width: 100px;
+    height: auto;
+}
+
+.content p {
+    text-align: justify;
+    flex: 1;
+}
+
+
